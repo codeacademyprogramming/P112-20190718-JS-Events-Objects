@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Events</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-primary"
+                    onclick="let a='Hello World'; document.getElementById('content').innerHTML = Date();">Click
+                    me</button>
+                <button class="btn btn-danger" onclick="let a='Hello World'; this.innerHTML = a;">Click me</button>
+                <button class="btn btn-warning" onclick="showMessage();">Click me</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p id="content"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="d-inline-block" onclick="counterIncrease();">Title</h2>
+            </div>
+            <div class="col-12">
+                <div class="alert alert-primary" role="alert" onmouseover="elementOver(this);"
+                    onmouseout="elementOut(this);">
+                    A simple primary alert—check it out!
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email" onkeyup="counterIncrease();">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/object2.js"></script>
+
+</body>
+
+</html>
